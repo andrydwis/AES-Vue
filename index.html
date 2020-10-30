@@ -112,6 +112,7 @@
                   this.inputEncrypt,
                   this.inputPass
                 );
+                this.inputEncrypt = null;
                 alert("Encrypt AES result = " + encrypted);
               }
             }
@@ -127,6 +128,7 @@
                   this.inputDecrypt,
                   this.inputPass
                 );
+                this.inputDecrypt = null;
                 var original = decrypted.toString(CryptoJS.enc.Utf8);
                 alert("Decrypt AES result = " + original);
               }
